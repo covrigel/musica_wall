@@ -1,0 +1,9 @@
+<% @songs.each do |song|%>
+  <div class="song">
+    <h3><%= song.title %><%= song.author %></h3>
+    <h4><a href="<%= song.url %>" target="_blank"><%= song.url %></a></h4>
+  </div>
+
+<%end%>
+
+<div><a href="/songs/new">Share your song</a></div>
